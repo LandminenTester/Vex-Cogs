@@ -285,16 +285,16 @@ Choose wisely!`
                 f"{datetime_to_timestamp(poll.poll_finish, 'R')}"
             ),
             value=(
-                "You have one vote, "
+                "Du hast einen Vote "
                 + (
-                    "and you can change it by clicking a new button."
+                    "und du kannst es wechseln wenn du auf einen anderen Button drückst."
                     if poll.allow_vote_change
-                    else "and you can't change it."
+                    else "und kannst diesen nicht ändern."
                 )
                 + (
-                    "\nYou can view the results while the poll is live, once you vote."
+                    "\nDu kannst das Ergebnis sehen wenn du abgestimmt hast."
                     if poll.view_while_live
-                    else "\nYou can view the results when the poll finishes."
+                    else "\nDu kannst das Ergebnis sehen wenn die Abstimmung zu ende ist."
                 )
             ),
         )
